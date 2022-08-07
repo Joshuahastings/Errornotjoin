@@ -1,0 +1,48 @@
+.layout
+{
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px;
+    box-shadow: black 10px 10px 10px;
+}
+.layout h1
+{
+  background-color: rgb(78, 77, 77);
+  color: snow;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.rows div
+{
+ display: grid;
+ grid-template-columns: 10% 10% ;
+ grid-template: 30% 30%;
+ gap: 10px;
+}
+.rows div div
+{
+    position: relative;
+    bottom: 10px;
+    background-color: rgb(78, 77, 77);
+    
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: black 10px 10px 10px;
+}
+.rows div div p 
+{
+    color: snow;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+}
+.Other h2
+{  background-color: rgb(78, 77, 77);
+    color: snow;
+    text-align: center;
+    border-radius: 10px;
+}
+.row_two
+{
+    display: grid;
+    
+}
