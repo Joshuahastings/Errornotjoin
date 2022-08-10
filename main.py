@@ -1,4 +1,16 @@
 print("hello people, i'm joshua aka ErrorNotJoin And This Is My College Work :)");
+one_time_table = ["\n1 x 1 = 1" , "\n1 x 2 = 2 ","\n1 x 3 = 3" , "\n1 x 4 = 4 ","\n1 x 5 = 5" ,  "\n1 x 6 = 6 ","\n1 x 7 = 7" , "\n1 x 8 = 8 ","\n1 x 9 = 9" , "\n1 x 10 = 10 ", "\n 1 x 11 + 11", "\n 1 x 12 = 12"]
+two_time_table = ["\n2 x 1 = 2", "\n2 x 2 = 4", "\n2 x 3 = 6", "\n2 x 4 = 8", "\n2 x 5 = 10", "\n2 x 6 = 12", "\n2 x 7 = 14", "\n2 x 8 = 16","\n2 x 9 = 18"," \n2 x 10 = 20"," \n2 x 11 = 22", "\n2 x 12 = 24"]
+three_time_table = []
+th_time_table = []
+five_time_table = []
+six_time_table = ["\n6 x 1 = 6 ", "\n6 x 2 = 12", "\n6 x 3 = 18","\n6 x 4 = 24", "\n6 x 5 = 30", "\n6 x 6 = 36" ,"\n6 x 7 = 42","\n6 x 8 = 48","\n6 x 9 = 54","\n6 x 10 = 60"]
+se_time_table = []
+et_time_table = []
+ni_time_table = []
+ten_time_table = []
+ell_time_table = []
+
 
 
 worlds = "___Numbers In Order____\n1: "
@@ -9,7 +21,7 @@ def Maths():
  c = 20 + -3 * 5 / 8
  d = 5 + 15 /3*2 - 8 % 3
  #saving the pythone awser
- print("!\___________Pythom Basics Maths_________/!" )
+ print("\n!\___________Pythom Basics Maths_________/!" )
  print("a: " + str(a) + "\n" + "b: " + str(b) +"\n" + "c: " + str(c) + "\n" + "d: "  + str(d) + "\n" + "!\_____________END_______________________/!"   )
  #showing the aw and number them
  print(" " + "\n")
@@ -22,12 +34,12 @@ def Maths():
  #Pytohn is Div the number
  print(user_number_one +" / "+ user_number_two +  " = " + str(e) )
  #Showing The User Number And What That = To
- print("!\____________END______________________/!")
+ print("\n!\____________END______________________/!")
 
 
  Main()
 def Python_Control_Statements():
-    print("!\___________Python Control Statements_________/!")
+    print("\n!\___________Python Control Statements_________/!")
     #getting the user pick there number
     user_pick_a_number_one = input("1: Pick a Number: ")
     user_pick_a_number_two = input("2: Pick a Number: ")
@@ -75,20 +87,67 @@ def Python_Control_Statements():
                   print(worlds+user_pick_a_number_three + "\n2: " + user_pick_a_number_one + "\n3: "  + user_pick_a_number_two)
                   Main()
 
+def Loops():
+    print("\n\___________Loops_________/!")
+    user_type_of_loop = input("What Loop Do You What\n1:Fibonacci series, \n2:TimeTable, \n3:Back, \nI Pick: ")
+    if(user_type_of_loop == "1" or user_type_of_loop == "Fibonacci series" or user_type_of_loop == "fibonacci"):
+      x = 1
+      y = 0
+      #making the number
+      while x < 100:
+          #max number is 100 then it will stop
+          x += y
+          y += x
+          #they are add each of
+          print(x)
+          print(y)
+          #printing the x and y
+          if(x < 100 ):
+              continue
+      print(x)
+      Loops()
+    elif(user_type_of_loop == "2" or user_type_of_loop == "TimeTable"):
+        user_number_of_time_table = input("What Number (Only One , two or six)")
+        x = 0
+        if(user_number_of_time_table  == "1"):
+            for x in one_time_table:
+                print(x)
+
+            Loops()
+                #going for the in the  list and print all in the list
+        elif(user_number_of_time_table == "2"):
+            for x in two_time_table:
+                print(x)
+            Loops()
+                # going for the in the  list and print all in the list
+        elif(user_number_of_time_table == "6"):
+            for x in six_time_table:
+                print(x)
+            Loops()
+                # going for the in the e list and print all in the list
+        else:
+            for x in six_time_table:
+                print(x)
+            Loops()
+                # going for the in the  list and print all in the list
+    elif(user_type_of_loop == "Back" or user_type_of_loop == "back" or user_type_of_loop == "3"):
+        Main()
+
 
 def Main():
-    print("!\___________Main meun_________/!")
+    print("\n!\___________Main meun_________/!")
     #leting the user pick What function That what to go
     user = input("where do you what to go: " +"\n" + "1:Maths or maths" + "\n" +"2:Python Control Statements"+"\n" + "3:Loops \n" +"I Pick: ")
     if(user == "Maths" or user == "maths" or user ==  "1"):
-        print("!\____________END______________________/!")
+        print("\n!\____________END______________________/!")
         Maths()
 
     elif(user == "Python Control Statements" or user == "2"):
-        print("!\____________END______________________/!")
+        print("\n!\____________END______________________/!")
         Python_Control_Statements()
     elif(user == "Loops" or user == "loop" or user == "3"):
-        print("!\____________END______________________/!")
+        print("\n!\____________END______________________/!")
+        Loops()
 
 
 
