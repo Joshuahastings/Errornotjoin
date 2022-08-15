@@ -1,3 +1,5 @@
+import math
+
 print("hello people, i'm joshua aka ErrorNotJoin And This Is My College Work :)");
 one_time_table = ["\n1 x 1 = 1" , "\n1 x 2 = 2 ","\n1 x 3 = 3" , "\n1 x 4 = 4 ","\n1 x 5 = 5" ,  "\n1 x 6 = 6 ","\n1 x 7 = 7" , "\n1 x 8 = 8 ","\n1 x 9 = 9" , "\n1 x 10 = 10 ", "\n 1 x 11 + 11", "\n 1 x 12 = 12"]
 two_time_table = ["\n2 x 1 = 2", "\n2 x 2 = 4", "\n2 x 3 = 6", "\n2 x 4 = 8", "\n2 x 5 = 10", "\n2 x 6 = 12", "\n2 x 7 = 14", "\n2 x 8 = 16","\n2 x 9 = 18"," \n2 x 10 = 20"," \n2 x 11 = 22", "\n2 x 12 = 24"]
@@ -129,15 +131,42 @@ def Loops():
             for x in six_time_table:
                 print(x)
             Loops()
-                # going for the in the  list and print all in the list
+    # going for the in the  list and print all in the list
     elif(user_type_of_loop == "Back" or user_type_of_loop == "back" or user_type_of_loop == "3"):
-        Main()
+        Loops()
+    else:
+        Loops()
+
+
+def Python_collections():
+    number_list = [5*11]
+    number_list_two = [20, 30, 25, 35, -16, 60, -100]
+    number_list_three = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
+    #div the number then div it by 0.102
+    math = number_list_two[0] / number_list_two[1]
+    maths = math / number_list_two[2]
+    math = maths / number_list_two[3]
+    maths = math / number_list_two[4]
+    math =  maths / number_list_two[5]
+    maths = math / number_list_two[6]
+    math = maths / 0.102
+    print("The Average Value Of The List  "+ str(math))
+    print("1:The Sum is "+ str(number_list))
+    number_list_three.sort(reverse=True)
+    print(number_list_three)
+    number_list_three.sort(reverse=False)
+    print(number_list_three)
+
+
+
+
+
 
 
 def Main():
     print("\n!\___________Main meun_________/!")
     #leting the user pick What function That what to go
-    user = input("where do you what to go: " +"\n" + "1:Maths or maths" + "\n" +"2:Python Control Statements"+"\n" + "3:Loops \n" +"I Pick: ")
+    user = input("where do you what to go: " +"\n1:Maths or maths" + "\n2:Python Control Statements"+"\n3:Loops \n" +"I Pick: ")
     if(user == "Maths" or user == "maths" or user ==  "1"):
         print("\n!\____________END______________________/!")
         Maths()
@@ -148,6 +177,8 @@ def Main():
     elif(user == "Loops" or user == "loop" or user == "3"):
         print("\n!\____________END______________________/!")
         Loops()
+    elif(user == "4"):
+        Python_collections()
 
 
 
