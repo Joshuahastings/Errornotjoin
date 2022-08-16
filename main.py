@@ -13,7 +13,8 @@ ni_time_table = []
 ten_time_table = []
 ell_time_table = []
 
-
+number_list_two = [20, 30, 25, 35, -16, 60, -100]
+number_list_three = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
 
 worlds = "___Numbers In Order____\n1: "
 def Maths():
@@ -22,12 +23,12 @@ def Maths():
  b = (55 + 9) % 9
  c = 20 + -3 * 5 / 8
  d = 5 + 15 /3*2 - 8 % 3
- #saving the pythone awser
- print("\n!\___________Pythom Basics Maths_________/!" )
- print("a: " + str(a) + "\n" + "b: " + str(b) +"\n" + "c: " + str(c) + "\n" + "d: "  + str(d) + "\n" + "!\_____________END_______________________/!"   )
+ #saving the python awser
+ print("\n!\_________python Basics Maths_________/!" )
+ print("a: " + str(a) + "\n" + "b: " + str(b) +"\n" + "c: " + str(c) + "\n" + "d: "  + str(d) + "\n" + "!\_________END_________/!"   )
  #showing the aw and number them
  print(" " + "\n")
- print("!\___________User Input Maths________/!")
+ print("!\_________User Input Maths_________/!")
  user_number_one  = (input("What is Your Number: "))
  #Getting the first Number From the User
  user_number_two  = (input("What is Your Number: "))
@@ -36,12 +37,12 @@ def Maths():
  #Pytohn is Div the number
  print(user_number_one +" / "+ user_number_two +  " = " + str(e) )
  #Showing The User Number And What That = To
- print("\n!\____________END______________________/!")
+ print("\n!\_________END_________/!")
 
 
  Main()
 def Python_Control_Statements():
-    print("\n!\___________Python Control Statements_________/!")
+    print("\n!\_________Python Control Statements_________/!")
     #getting the user pick there number
     user_pick_a_number_one = input("1: Pick a Number: ")
     user_pick_a_number_two = input("2: Pick a Number: ")
@@ -138,24 +139,38 @@ def Loops():
         Loops()
 
 
+
+
 def Python_collections():
-    number_list = [5*11]
+    number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     number_list_two = [20, 30, 25, 35, -16, 60, -100]
     number_list_three = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
-    #div the number then div it by 0.102
-    math = number_list_two[0] / number_list_two[1]
-    maths = math / number_list_two[2]
-    math = maths / number_list_two[3]
-    maths = math / number_list_two[4]
-    math =  maths / number_list_two[5]
-    maths = math / number_list_two[6]
-    math = maths / 0.102
+    #div the number than div it by 0.102
+    math = number_list_two[0] + number_list_two[1]
+    maths = math + number_list_two[2]
+    math = maths + number_list_two[3]
+    maths = math + number_list_two[4]
+    math =  maths + number_list_two[5]
+    maths = math + number_list_two[6]
+    math = maths / len(number_list_two)
+
+    cat = number_list[0] + number_list[1]
+    dog = cat + number_list[2]
+    cat = dog + number_list[3]
+    dog = cat + number_list[4]
+    cat = dog + number_list[5]
+    dog = cat + number_list[6]
+    cat = dog + number_list[7]
+    dog = cat + number_list[8]
+    cat = dog + number_list[9]
+
     print("The Average Value Of The List  "+ str(math))
-    print("1:The Sum is "+ str(number_list))
+    print("1:The Sum is "+ str(cat))
     number_list_three.sort(reverse=True)
     print(number_list_three)
     number_list_three.sort(reverse=False)
     print(number_list_three)
+
 
 
 
