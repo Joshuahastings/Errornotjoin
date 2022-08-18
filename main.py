@@ -177,22 +177,6 @@ def pythone_funvtions(number):
     test = max(number)
     print("that Max Number Is: "+ str(test))
 
-    user_input_one = int(input("Enter A Number"))
-    cat = 0
-    dog = 0
-    something = 1
-    jeff = 1
-    woof = range(1, user_input_one + 1 )
-    for dog in woof:
-        #add one to cat
-        jeff += 1
-        cat += 1
-        ## is adding one to itslefy
-        dog += 1
-        #time is itslefy  * dog
-        something = something * dog
-        # showing it then do the sum then come back and print and go to the sum and back
-        print(str(cat) + ": " + str(dog) + " * " + str(jeff) + "= " + str(something))
 
 
 
