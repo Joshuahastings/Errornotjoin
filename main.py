@@ -153,7 +153,7 @@ def Python_collections():
     math =  maths + number_list_two[5]
     maths = math + number_list_two[6]
     math = maths / len(number_list_two)
-
+     #add all the number
     cat = number_list[0] + number_list[1]
     dog = cat + number_list[2]
     cat = dog + number_list[3]
@@ -166,10 +166,33 @@ def Python_collections():
 
     print("The Average Value Of The List  "+ str(math))
     print("1:The Sum is "+ str(cat))
+    #puting it in to the order
     number_list_three.sort(reverse=True)
     print(number_list_three)
+    ##not going the other way
     number_list_three.sort(reverse=False)
     print(number_list_three)
+def pythone_funvtions(number):
+    print(number)
+    test = max(number)
+    print("that Max Number Is: "+ str(test))
+
+    user_input_one = int(input("Enter A Number"))
+    cat = 0
+    dog = 0
+    something = 1
+    jeff = 1
+    woof = range(1, user_input_one + 1 )
+    for dog in woof:
+        #add one to cat
+        jeff += 1
+        cat += 1
+        ## is adding one to itslefy
+        dog += 1
+        #time is itslefy  * dog
+        something = something * dog
+        # showing it then do the sum then come back and print and go to the sum and back
+        print(str(cat) + ": " + str(dog) + " * " + str(jeff) + "= " + str(something))
 
 
 
@@ -181,7 +204,7 @@ def Python_collections():
 def Main():
     print("\n!\___________Main meun_________/!")
     #leting the user pick What function That what to go
-    user = input("where do you what to go: " +"\n1:Maths or maths" + "\n2:Python Control Statements"+"\n3:Loops \n" +"I Pick: ")
+    user = input("where do you what to go: " +"\n1:Maths or maths" + "\n2:Python Control Statements"+"\n3:Loops " +"\n4:Python_collections"+"\nI Pick: ")
     if(user == "Maths" or user == "maths" or user ==  "1"):
         print("\n!\____________END______________________/!")
         Maths()
@@ -192,8 +215,11 @@ def Main():
     elif(user == "Loops" or user == "loop" or user == "3"):
         print("\n!\____________END______________________/!")
         Loops()
-    elif(user == "4"):
+    elif(user == "4" or user == "Python_collections"):
         Python_collections()
+    elif(user == "5"):
+        fruts = [10, 2, 3, 4, 7]
+        pythone_funvtions(fruts)
 
 
 
