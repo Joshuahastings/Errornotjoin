@@ -3,16 +3,7 @@ import math
 print("hello people, i'm joshua aka ErrorNotJoin And This Is My College Work :)");
 one_time_table = ["\n1 x 1 = 1" , "\n1 x 2 = 2 ","\n1 x 3 = 3" , "\n1 x 4 = 4 ","\n1 x 5 = 5" ,  "\n1 x 6 = 6 ","\n1 x 7 = 7" , "\n1 x 8 = 8 ","\n1 x 9 = 9" , "\n1 x 10 = 10 ", "\n 1 x 11 + 11", "\n 1 x 12 = 12"]
 two_time_table = ["\n2 x 1 = 2", "\n2 x 2 = 4", "\n2 x 3 = 6", "\n2 x 4 = 8", "\n2 x 5 = 10", "\n2 x 6 = 12", "\n2 x 7 = 14", "\n2 x 8 = 16","\n2 x 9 = 18"," \n2 x 10 = 20"," \n2 x 11 = 22", "\n2 x 12 = 24"]
-three_time_table = []
-th_time_table = []
-five_time_table = []
 six_time_table = ["\n6 x 1 = 6 ", "\n6 x 2 = 12", "\n6 x 3 = 18","\n6 x 4 = 24", "\n6 x 5 = 30", "\n6 x 6 = 36" ,"\n6 x 7 = 42","\n6 x 8 = 48","\n6 x 9 = 54","\n6 x 10 = 60"]
-se_time_table = []
-et_time_table = []
-ni_time_table = []
-ten_time_table = []
-ell_time_table = []
-
 number_list_two = [20, 30, 25, 35, -16, 60, -100]
 number_list_three = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]
 
