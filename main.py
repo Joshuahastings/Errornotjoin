@@ -1,4 +1,5 @@
 import math
+import random
 
 print("hello people, i'm joshua aka ErrorNotJoin And This Is My College Work :)");
 one_time_table = ["\n1 x 1 = 1" , "\n1 x 2 = 2 ","\n1 x 3 = 3" , "\n1 x 4 = 4 ","\n1 x 5 = 5" ,  "\n1 x 6 = 6 ","\n1 x 7 = 7" , "\n1 x 8 = 8 ","\n1 x 9 = 9" , "\n1 x 10 = 10 ", "\n 1 x 11 + 11", "\n 1 x 12 = 12"]
@@ -163,13 +164,44 @@ def Python_collections():
     ##not going the other way
     number_list_three.sort(reverse=False)
     print(number_list_three)
-def pythone_funvtions(number):
-    print(number)
+
+def pythone_funvtions(number, cat, number_ten):
+    #gettin the info from Main() from the name
+    print("\n1:The List Is : " + str(number))
+    #print that info
     test = max(number)
-    print("that Max Number Is: "+ str(test))
+    print("2: The Max Number Is: "+ str(test))
+    print("3: Non-Negative Integer N = "+str(cat))
+    print(number_ten)
 
+def rock():
+   number  = 0
+   game = ""
+   rock_paper_scissors = input("Enter: (Rock, Paper, Scissors): ")
+   print(rock_paper_scissors)
 
-
+   number = random.randint(1, 3)
+   if(number == 1 ):
+       game = "rock"
+   elif( number == 2 ):
+       game = "paper"
+   else:
+       game = "Scissors"
+   print(game)
+   if(rock_paper_scissors.lower() == game.lower()):
+       print("draw")
+   elif(rock_paper_scissors.lower() == "rock" and game.lower() == "paper" ):
+     print("Player loss (paper wins )")
+   elif(rock_paper_scissors.lower() == "rock" and game.lower() == "Scissors" ):
+       print("Player Wins (Rock Wins )")
+   elif(rock_paper_scissors.lower() == "paper" and game.lower() == "rock"):
+       print("player Wins (Paper Wins)")
+   elif(rock_paper_scissors.lower() == "scissors" and game.lower() == "rock" ):
+       print("Player loss (Rock wins)")
+   elif(rock_paper_scissors.lower() == "scissors" and game.lower() == "paper"):
+       print("player Wins (Scissors Wins)")
+   elif(rock_paper_scissors.lower() == "paper" and game.lower() == "Scissors" ):
+       print("Player loss (scissors wins)")
 
 
 
@@ -193,8 +225,55 @@ def Main():
     elif(user == "4" or user == "Python_collections"):
         Python_collections()
     elif(user == "5"):
-        fruts = [10, 2, 3, 4, 7]
-        pythone_funvtions(fruts)
+        user_input_one = int(input("Enter A Number"))
+        user_input_two = int(input("Enter A Number"))
+        woof = range(1, user_input_one + 1)
+        x = 0
+        dog = 1
+        names = 1
+        for x in woof:
+            # x is add one
+            x + 1
+            # name is add one
+            names += 1
+            # dog is times x  and that is = to The  dog And The dog is Increeesing the number to times  with then its is 2* 1 then 2 * 3 then
+            dog = dog * x
+            print(str(x) + ": " + str(x) + " * " + str(names) + " = " + str(dog))
+
+        cat = 0
+        pl = 0
+        lol = 2
+        op = 0
+        for l in woof:
+            that = user_input_two / 2
+            if (that == 2. or that == 3. or that == 5. or that == 7.):
+                print(str(that) + " This Is Not prime Number")
+                break
+            else:
+                op = that / 3
+                if (op == 2. or op == 3. or op == 5. or op == 7.):
+                    pl = "This Is Not prime Number"
+                    break
+                else:
+                    cat = op / 5
+                    if (cat == 2. or cat == 3. or cat == 5. or cat == 7.):
+                        pl = "This Is Not prime Number"
+                        break
+                    else:
+                        lol = cat / 7
+                        if (lol == 2. or lol == 3. or lol == 5. or lol == 7.):
+                            pl = "This Is Not prime Number"
+                            break
+                        else:
+                            pl = "This is A prime number"
+                            break
+        pythone_funvtions(fruts, dog, pl)
+    else:
+        rock()
+
+
+
+
 
 
 
